@@ -1,6 +1,3 @@
-# Load Homebrew config script
-source $HOME/.brewconfig.zsh
-
 # Completion settings
 autoload -U compinit
 compinit
@@ -31,6 +28,15 @@ vcs_info_wrapper() {
 PROMPT="%F{green}%n%f@%F{blue}%m%f: %F{cyan}%~%f "$'$(vcs_info_wrapper)'"> "
 RPROMPT="%* [$?]"
 
+# history config
+HISTSIZE=100000
+SAVEHIST=100000
+HISTFILE=~/.history
+
 source ~/.alias
 
+# Load Homebrew config script
+source $HOME/.brewconfig.zsh
+
+source ~/.brew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
