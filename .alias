@@ -1,3 +1,5 @@
 alias gst='git status'
 alias glog='git log --oneline --decorate --graph'
 alias ls='ls -G'
+alias subl='open -a Sublime\ Text'
+
