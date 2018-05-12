@@ -26,7 +26,7 @@ vcs_info_wrapper() {
 
 # Prompt config
 PROMPT="%F{green}%n%f@%F{blue}%m%f: %F{cyan}%~%f "$'$(vcs_info_wrapper)'"> "
-RPROMPT="%* [$?]"
+RPROMPT="%* [%?]"
 
 # history config
 HISTSIZE=100000
@@ -38,5 +38,8 @@ source ~/.alias
 # Load Homebrew config script
 source $HOME/.brewconfig.zsh
 
+# zsh syntax highlighting
 source ~/.brew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# init rbenv
+eval "$(rbenv init -)"
