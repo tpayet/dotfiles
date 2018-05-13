@@ -39,10 +39,7 @@ source ~/.alias
 source $HOME/.brewconfig.zsh
 
 # zsh syntax highlighting
-source ~/.brew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh || source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.brew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # init rbenv
 eval "$(rbenv init -)"
-
-$(cd ~/.dotfiles && git pull origin master)
-
