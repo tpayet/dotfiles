@@ -35,11 +35,16 @@ HISTFILE=~/.history
 
 source ~/.alias
 
-# Load Homebrew config script
-source $HOME/.brewconfig.zsh
-
 # zsh syntax highlighting
-source ~/.brew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+if [ $(whoami) = "totolapaille" ]; then #if mba perso
+    source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+elif [ $(whoami) = "tpayet" ]; then # if school config
+    # Load Homebrew config script
+    source $HOME/.brewconfig.zsh
+    source ~/.brew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
 # init rbenv
 eval "$(rbenv init -)"
+
+export PATH="/usr/local/sbin:$PATH"
