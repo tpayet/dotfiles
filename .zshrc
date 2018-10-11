@@ -25,7 +25,7 @@ vcs_info_wrapper() {
 
 
 # Prompt config
-PROMPT="%F{green}%n%f@%F{blue}%m%f: %F{cyan}%~%f "$'$(vcs_info_wrapper)'"> "
+PROMPT=" %F{cyan}%~%f "$'$(vcs_info_wrapper)'"> "
 RPROMPT="%* [%?]"
 
 # history config
@@ -48,3 +48,4 @@ fi
 eval "$(rbenv init -)"
 
 export PATH="/usr/local/sbin:$PATH"
+
