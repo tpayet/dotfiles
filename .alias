@@ -1,6 +1,5 @@
-alias gst='git status'
-alias glog='git log --oneline --decorate --graph'
-alias gd='git diff'
+alias gst='git log --oneline --decorate --graph --max-count=5; git status'
+alias gp='git push origin $(git rev-parse --abbrev-ref HEAD)'
 alias ls='ls -G'
 alias subl='open -a Sublime\ Text'
 
