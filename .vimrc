@@ -1,5 +1,4 @@
 syn on
-set nu
 
 filetype plugin indent on
 set tabstop=4
@@ -7,5 +6,13 @@ set shiftwidth=4
 set expandtab
 
 set list
-set listchars=tab:>·,space:·,trail:~
+set listchars=tab:>·,trail:~
+set mouse=a
 
+" turn hybrid line numbers on
+:set number relativenumber
+:set nu rnu
+
+" toggle hybrid line numbers
+:set number! relativenumber!
+:set nu! rnu!
