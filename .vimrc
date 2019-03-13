@@ -16,3 +16,8 @@ set mouse=a
 " toggle hybrid line numbers
 :set number! relativenumber!
 :set nu! rnu!
+
+# easy line moving using ctrl & shift
+noremap <c-s-up> ddkP
+noremap <c-s-down> ddp
+
