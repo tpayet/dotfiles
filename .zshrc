@@ -43,9 +43,14 @@ elif [ $(whoami) = "tpayet" ]; then # if school config
     # Load Homebrew config script
     source $HOME/.brewconfig.zsh
     source ~/.brew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+elif [ $(whoami) = "payetth" ]; then #if mbpro lv
+    source /Users/payetth/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
-# init rbenv
-eval "$(rbenv init -)"
+export PATH="/Users/payetth/homebrew/bin:/usr/local/sbin:$PATH"
 
-export PATH="/usr/local/sbin:$PATH"
 
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Cargo PATH for rust
+source $HOME/.cargo/env
