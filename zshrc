@@ -1,9 +1,5 @@
-# Completion settings
-autoload -U compinit
-compinit
-
-precmd() {
-}
+source $HOME/.history.zsh
+source ~/.alias
 
 # vcs_info (git branch)
 setopt prompt_subst
@@ -23,20 +19,11 @@ vcs_info_wrapper() {
   fi
 }
 
-
 # Prompt config
 PROMPT=" %F{cyan}%~%f "$'$(vcs_info_wrapper)'"> "
 RPROMPT="%* [%?]"
 
-# history config
-HISTSIZE=100000
-SAVEHIST=100000
-HISTFILE=~/.history
-
-source ~/.alias
-
 # zsh syntax highlighting
-
 if [ $(whoami) = "totolapaille" ]; then #if mba perso
     source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 elif [ $(whoami) = "tpayet" ]; then # if school config
