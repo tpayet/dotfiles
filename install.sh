@@ -1,6 +1,6 @@
 #! /bin/bash
 
-files="alias tmux.conf vimrc zshrc"
+files="alias tmux.conf vimrc zshrc history.zsh"
 
 for file in $files ; do
     echo "Creating symlink for $file at $HOME/.$file";
