@@ -1,4 +1,4 @@
-alias gst='git log --oneline --decorate --graph --max-count=5; git status'
+alias gst='git log --pretty=format:"%C(auto,yellow)%h%x09%C(auto,green)%ad%x09%C(auto,reset)%s%20%C(auto,blue)%d" --date=relative --graph --decorate --max-count=5; git status'
 alias gp='git push origin $(git rev-parse --abbrev-ref HEAD)'
 alias ls='ls -G'
 alias subl='open -a Sublime\ Text'
