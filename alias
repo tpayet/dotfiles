@@ -3,5 +3,6 @@ alias glog='git log --pretty=format:"%C(auto,yellow)%h%x09%C(auto,green)%ad%x09%
 alias gp='git push origin $(git rev-parse --abbrev-ref HEAD)'
 
 alias ls='ls -G'
+alias l='ls -lath'
 alias subl='open -a Sublime\ Text'
-
+alias docker-clean='docker rmi $(docker image ls --filter="dangling=true" -q)'
