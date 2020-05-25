@@ -55,3 +55,6 @@ if [ -f '/Users/payetth/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then .
 # tabtab source for slss package
 # uninstall by removing these lines or running `tabtab uninstall slss`
 [[ -f /Users/payetth/homebrew/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/payetth/homebrew/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
+
+# Init rbenv
+eval "$(rbenv init -)"
