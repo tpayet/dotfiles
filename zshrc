@@ -24,27 +24,10 @@ PROMPT=" %F{cyan}%~%f "$'$(vcs_info_wrapper)'"> "
 RPROMPT="%* [%?]"
 
 # zsh syntax highlighting
-if [ $(whoami) = "totolapaille" ]; then #if mba perso
-    source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-elif [ $(whoami) = "tpayet" ]; then # if school config
-    # Load Homebrew config script
-    source $HOME/.brewconfig.zsh
-    source ~/.brew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-elif [ $(whoami) = "payetth" ]; then #if mbpro lv
-    source /Users/payetth/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-fi
-export PATH="/Users/payetth/homebrew/bin:/usr/local/sbin:$PATH"
-export CDPATH="/Users/payetth/Documents/"
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Cargo PATH for rust
 source $HOME/.cargo/env
-
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/payetth/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/payetth/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/payetth/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/payetth/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
